@@ -1,0 +1,71 @@
+h3 {
+  text-align: center;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  color: rgb(245 78 72 / 91.1%);
+  letter-spacing: 1px;
+}
+
+.form {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+label {
+  margin-left: 12px;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.5px;
+}
+
+#answer {
+  height: 40px;
+  width: 425px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+}
+
+#sel-answer {
+  background-color: #ebebeb;
+  height: 40px;
+  width: 425px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: rgb(196 196 196);
+  padding-left: 10px;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: end;
+}
+
+.submit {
+  width: 100px;
+  height: 35px;
+  background-color: rgb(245 78 72 / 91.1%);
+  border: none;
+  border-radius: 25px;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 550;
+  letter-spacing: 0.75px;
+}
