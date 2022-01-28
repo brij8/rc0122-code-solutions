@@ -29,8 +29,13 @@ body {
   margin: 0 100px;
 }
 
+.column-half {
+  display: flex;
+}
+
 .col-2 {
   text-align: start;
+  margin-top: 20px;
   margin-right: 40px;
 }
 
