@@ -1,0 +1,36 @@
+* {
+  font-family: Barlow, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(236 236 236);
+}
+
+.row {
+  text-align: center;
+}
+
+.row > img {
+  width: 200px;
+  position: relative;
+}
+
+.icons > img {
+  width: 50px;
+  position: relative;
+}
+
+.sec-2-cols {
+  display: flex;
+  margin: 0 75px;
+}
+
+.col-1-4th {
+  flex-basis: calc(100% / 4);
+}
+
+p,
+h3 {
+  font-size: 0.75rem;
+}
