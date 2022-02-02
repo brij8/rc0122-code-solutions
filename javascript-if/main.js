@@ -27,17 +27,17 @@ function isOldEnoughToDrive(person) {
 }
 
 function isOldEnoughToDrinkAndDrive(person) {
-  return 'false - this is illegal';
+  return person.age < 0;
 }
 
 function categorizeAcidity(pH) {
-  if (pH > 0 && pH < 7) {
+  if (pH >= 0 && pH < 7) {
     return 'acid';
   } else {
     if (pH === 7) {
       return 'neutral';
     } else {
-      if (pH > 7 && pH < 14) {
+      if (pH > 7 && pH <= 14) {
         return 'base';
       } else {
         if (pH < 0 || pH > 14) {
