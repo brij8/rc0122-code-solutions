@@ -1,0 +1,65 @@
+* {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  color: rgb(146 146 146);
+  background-color: papayawhip;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.green {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+span {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.line {
+  text-decoration: underline;
+}
+
+.phrase {
+  margin: 100px;
+  justify-content: center;
+}
+
+.scorebox {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.scorebox-vis {
+  visibility: hidden;
+}
+
+.scorebox > p {
+  font-size: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+}
+
+.again {
+  border: none;
+  padding: 5px;
+  color: white;
+  background-color: goldenrod;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px #c1b18a;
+}
