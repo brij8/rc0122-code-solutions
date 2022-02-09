@@ -1,14 +1,15 @@
 var $spans = document.querySelectorAll('span');
 var curL = 0;
-
 var $scorebox = document.querySelector('.scorebox');
+var $scoreboxDiv = document.querySelector('.scorebox div');
 var correct = 0;
 var errors = 0;
+var $again = document.querySelector('.again');
 
 function input(event) {
   if (curL < $spans.length) {
     if (event.key === $spans[curL].textContent) {
-      $spans[curL].className = 'green';
+      $spans[curL].className = 'black';
       correct++;
       curL++;
       if (curL === $spans.length) {
@@ -25,15 +26,21 @@ function input(event) {
 
 function score() {
   $scorebox.className = 'scorebox';
-  $scorebox.innerHTML = '<p>accuracy:  ' + Math.round((correct / (correct + errors)) * 100) + '%</p> <p>errors:  ' + errors + '</p>' +
-  '<button class="again">play again? click to reset</button>';
-  var $again = document.querySelector('.again');
+  $scoreboxDiv.innerHTML = '<p>accuracy:  ' + Math.round((correct / (correct + errors)) * 100) + '%</p> <p>errors:  ' + errors + '</p>';
   $again.addEventListener('click', playAgain);
-//  document.removeEventListener('keydown', input);
 }
 
 function playAgain(event) {
-  location.reload();
+  $again.removeEventListener('click', playAgain);
+  $scorebox.className = 'scorebox scorebox-vis';
+  $scoreboxDiv.innerHTML = '';
+  for (let i = 1; i < $spans.length; i++) {
+    $spans[i].className = '';
+  }
+  $spans[0].className = 'line';
+  errors = 0;
+  correct = 0;
+  curL = 0;
 }
 
 document.addEventListener('keydown', input);
