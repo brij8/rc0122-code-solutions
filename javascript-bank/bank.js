@@ -24,14 +24,10 @@ Bank.prototype.getAccount = function (number) {
   } return null;
 };
 
-Bank.prototype.getTotalAssets = function (holder, balance) {
-  if (balance > 0 && Number.isInteger(balance)) {
-    var newAcc = new Account(this.nextAccountNumber, holder);
-    newAcc.deposit(balance);
-    this.accounts.push(newAcc);
-    this.nextAccountNumber++;
-    return newAcc.number;
-  } else if (balance < 0) {
-    return null;
+Bank.prototype.getTotalAssets = function () {
+  var totalAssets = 0;
+  for (let i = 0; i < this.accounts.length; i++) {
+    totalAssets += this.accounts[i].getBalance();
   }
+  return totalAssets;
 };

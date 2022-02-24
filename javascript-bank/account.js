@@ -25,7 +25,7 @@ Account.prototype.withdraw = function (amount) {
   }
 };
 
-Account.prototype.getBalance = function (amount) {
+Account.prototype.getBalance = function () {
   var ins = 0;
   var outs = 0;
   for (let i = 0; i < this.transactions.length; i++) {
