@@ -17,11 +17,12 @@ Bank.prototype.openAccount = function (holder, balance) {
 };
 
 Bank.prototype.getAccount = function (number) {
-  const acct = this.accounts.find(({ number }) => this.accounts.number === number);
-  return acct;
+  for (let i = 0; i < this.accounts.length; i++) {
+    if (this.accounts[i].number === number) {
+      return this.accounts[i];
+    }
+  } return null;
 };
-
-// const result = inventory.find(({ name }) => name === 'cherries');
 
 Bank.prototype.getTotalAssets = function (holder, balance) {
   if (balance > 0 && Number.isInteger(balance)) {
