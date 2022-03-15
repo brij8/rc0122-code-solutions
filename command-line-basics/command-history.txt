@@ -1,0 +1,478 @@
+    1  git config --global user.name "brij"
+    2  git config --global user.email "bmuses@gmail.com"
+    3  git config --global --list
+    4  pwd
+    5  cd ~repos/
+    6  cd ~/repos
+    7  ls
+    8  cd rc0122-code-solutions
+    9  git branch --list
+   10  nc
+   11  nc google.com 80
+   12  pwd
+   13  cd ~/repos
+   14  cd rc0122-code-solutions
+   15  git branch javascript-prototypes
+   16  git switch javascript-prototypes
+   17  git status
+   18  git add .
+   19  git status
+   20  git commit -m 'completed javascript-prototypes'
+   21  git push origin javascript-prototypes 
+   22  git switch master
+   23  git status
+   24  git add javascript-prototypes
+   25  git pull origin master
+   26  git status
+   27  cd ~/repos
+   28  cd rc0122-code-solutions
+   29  git branch javascript-constructors
+   30  git switch javascript-constructors 
+   31  git status
+   32  git add javascript-constructors
+   33  git status
+   34  git commit -m 'completed javascript-constructors'
+   35  git switch master
+   36  git status
+   37  git push origin javascript-constructors
+   38  git pull origin master
+   39  git branch javascript-timers
+   40  git switch javascript-timers
+   41  git status
+   42  git switch master
+   43  git status
+   44  git add javascript-timers
+   45  git status
+   46  git commit -m 'completed javascript-timers'
+   47  git push origin javascript-timers
+   48  git switch javascript-timers
+   49  git push origin javascript-timers
+   50  git status
+   51  git add javascript-timers
+   52  git switch master
+   53  git switch javascript-timers
+   54  git status
+   55  git add javascript-timers
+   56  git status
+   57  git commit -m 'completed javascript-timers'
+   58  git push origin javascript-timers
+   59  git switch master
+   60  git switch javascript-timers
+   61  git status
+   62  git add javascript-timers
+   63  git status
+   64  git commit -m 'js-timers + clearInterval bc i forgot it oops'
+   65  git push origin javascript-timers
+   66  git switch master
+   67  git pull origin master
+   68  git switch javascript-timers
+   69  git status
+   70  git add javascript-timers
+   71  git commit -m 'js-timers + notes'
+   72  git push origin javacript-timers
+   73  git push origin javascript-timers
+   74  git switch master
+   75  git pull origin master
+   76  git status
+   77  git pull origin master
+   78  git status
+   79  git branch javascript-ajax
+   80  git switch javascript-ajax
+   81  git switch master
+   82  git switch javascript-ajax
+   83  git branch -D master
+   84  git switch master
+   85  git status
+   86  git switch javascript-ajax
+   87  git status
+   88  git add javascript-ajax
+   89  git status
+   90  git commit -m 'completed javascript-ajax'
+   91  git push origin javascript-ajax
+   92  git switch master
+   93  git pull origin master
+   94  git status
+   95  git branch javascript-bank
+   96  git status
+   97  git switch javascript-bank
+   98  git status
+   99  git add javascript-bank
+  100  git status
+  101  git commit -m 'js-bank in progress, trying to do commits more often :)'
+  102  git status
+  103  git add javascript-bank
+  104  git status
+  105  git commit -m 'js-bank, on final prototype function'
+  106  git status
+  107  git add javascript-bank
+  108  git status
+  109  git commit -m 'completed javascript-bank'
+  110  git push origin javascript-bank
+  111  git switch master
+  112  git branch javascript-carousel
+  113  git switch javascript-carousel
+  114  git switch master
+  115  git pull origin master
+  116  http http://www.example.com
+  117  http http://colormind.io/api/
+  118  http https://www.wordsapi.com/
+  119  http https://xkcd.com/info.0.json
+  120  cd ~/repos
+  121  git clone git@github.com:brij8/ajax-project.git
+  122  cd ajax-project
+  123  npm ci
+  124  cd rc0122-code-solutions
+  125  cd ~/repos
+  126  cd rc0122-code-solutions
+  127  git switch array-manipulation-3
+  128  git status
+  129  git add array-manipulation-3/
+  130  git status
+  131  git commit -m 'completed array-manipulation-3'
+  132  git push origin array-manipulation-3
+  133  git switch master
+  134  git branch object-manipulation-3
+  135  git switch object-manipulation-3
+  136  git status
+  137  git switch master
+  138  git branch -d object-manipulation-3
+  139  git branch -D object-manipulation-3
+  140  git branch object-manipulation-3
+  141  git switch object-manipulation-3
+  142  cd ~/repos
+  143  ls
+  144  cd ajax-project
+  145  ls
+  146  git branch --list
+  147  git pull origin master
+  148  git branch issue-1-upload-an-image
+  149  git switch issue-1-upload-an-image 
+  150  git status
+  151  git add issue-1-upload-an-image
+  152  git add .
+  153  git status
+  154  git commit -m 'css/html progress'
+  155  git push origin issue-1-upload-an-image 
+  156  git status
+  157  git add .
+  158  git status
+  159  git commit -m 'F1, html/css, header done'
+  160  git push origin issue-1-upload-an-image 
+  161  git status
+  162  git add .
+  163  git status
+  164  git commit -m 'F1 T1, upload button in place'
+  165  git push origin issue-1-upload-an-image 
+  166  git status
+  167  git add .
+  168  git status
+  169  git commit -m 'F1, T2, on click open file explorer'
+  170  git status
+  171  git add .
+  172  git status
+  173  git commit -m 'F1, T2, on click open file explorer'
+  174  git status
+  175  git add .
+  176  git status
+  177  git commit -m 'F1, T2, on click open file explorer'
+  178  git push origin issue-1-upload-an-image 
+  179  git status
+  180  git add .
+  181  git status
+  182  git commit -m 'F1, T3, selected image loads into display area'
+  183  git push origin issue-1-upload-an-image 
+  184  git status
+  185  git add .
+  186  git commit -m 'F1, T3, small changes and notes'
+  187  git push origin issue-1-upload-an-image 
+  188  git status
+  189  git add .
+  190  git commit -m 'F1, T4, mobile scaling progress'
+  191  git push origin issue-1-upload-an-image 
+  192  git status
+  193  git add .
+  194  git status
+  195  git commit -m 'F1 complete (upload img + mobile scaling done)'
+  196  git push origin issue-1-upload-an-image 
+  197  git switch master
+  198  cd ~/repos
+  199  ls
+  200  cd rc0122-code-solutions
+  201  git status
+  202  git switch master
+  203  git branch css-ecommerce-page
+  204  git switch css-ecommerce-page
+  205  git switch master
+  206  git branch -d css-ecommerce-page 
+  207  git branch -D css-ecommerce-page 
+  208  git branch css-ecommerce-page
+  209  git status
+  210  git switch css-ecommerce-page
+  211  git switch master
+  212  cd ~/repos
+  213  cd ajax-project
+  214  ls
+  215  git branch --list
+  216  git pull origin master
+  217  git branch issue-2-generate-palette
+  218  git switch issue-2-generate-palette 
+  219  git status
+  220  cd ~/repos
+  221  cd rc0122-code-solutions/
+  222  git status
+  223  git pull origin master
+  224  cd ~/repos
+  225  cd ajax-project/
+  226  git status
+  227  git add .
+  228  git status
+  229  git commit -m 'F2, empty palette on load + buttons'
+  230  git push origin issue-2-generate-palette
+  231  git status
+  232  git add .
+  233  git status
+  234  git commit -m 'F2, mobile scaling fixes'
+  235  git push origin issue-2-generate-palette
+  236  git status
+  237  git add .
+  238  git status
+  239  git commit -m 'F2 css styling (oo border gradients!)'
+  240  git push origin issue-2-generate-palette
+  241  git status
+  242  git add .
+  243  git status
+  244  git add .
+  245  git status
+  246  git commit -m 'feature 2 complete'
+  247  git push origin issue-2-generate-palette
+  248  git status
+  249  git add .
+  250  git status
+  251  git commit -m 'F2 minor span adjustment in header'
+  252  git push origin issue-2-generate-palette 
+  253  cd ~/repos
+  254  ls
+  255  cd ajax-project
+  256  git switch master
+  257  git commit -m 'whoops forgot to change branches before starting issue 3'
+  258  git add .
+  259  git status
+  260  git commit -m 'whoops forgot to change branches before starting issue 3'
+  261  git add .
+  262  git status
+  263  git commit -m 'whoops forgot to change branches before starting issue 3'
+  264  git push origin issue-2
+  265  git push origin issue-2-generate-palette 
+  266  git switch master
+  267  git pull origin master
+  268  git branch issue-3-adjust-hold-colors
+  269  git switch issue-3-adjust-hold-colors 
+  270  git status
+  271  git add .
+  272  git status
+  273  git commit -m 'F3, T1 clicking swatch opens color picker'
+  274  git push origin issue-3-adjust-hold-colors 
+  275  git status
+  276  git add .
+  277  git commit -m 'F3, T2 assign color to swatch bg & color-code to code span'
+  278  git push origin issue-3-adjust-hold-colors 
+  279  git status
+  280  git add .
+  281  git status
+  282  git commit -m 'F3, T3 hold buttons style toggle'
+  283  git push origin issue-3-adjust-hold-colors 
+  284  pwd
+  285  cd ~/repos
+  286  cd ajax-project
+  287  git status
+  288  git add .
+  289  git commit -m 'F3, T4 hold button creates array of strings for data obj; next change to numbers'
+  290  git status
+  291  git add .
+  292  git commit -m 'F3, T4 hold button creates array of strings for data obj; next change to numbers'
+  293  git push origin issue-3-adjust-hold-colors 
+  294  git status
+  295  git add .
+  296  git status
+  297  git commit -m 'F3, T4 hold buttons assign array of numbers to data obj'
+  298  git push origin issue-3-adjust-hold-colors 
+  299  git add .
+  300  git status
+  301  git commit -m 'F3, T5 input & codes for 5 swatches - progression'
+  302  git pull origin issue-3-adjust-hold-colors 
+  303  git push orgin issue-3-adjust-hold-colors 
+  304  git status
+  305  git push origin issue-3-adjust-hold-colors 
+  306  git status
+  307  git add .
+  308  git commit -m 'F3, T5-6, all 5 work, scaling/styling fixed, genPalette() works properly! Feature 3 DONE' 
+  309  git push origin issue-3-adjust-hold-colors 
+  310  git switch master
+  311  git pull origin master
+  312  git branch issue-4-save-palettes
+  313  git switch issue-4-save-palettes 
+  314  git status
+  315  git add .
+  316  git status
+  317  git commit -m 'F4, T1, save-modal progress'
+  318  git push origin issue-4-save-palettes 
+  319  cd ~repos/
+  320  git switch master
+  321  cd ~/repos
+  322  cd rc1022-code-solutions
+  323  ls
+  324  rc0122-code-solutions
+  325  cd rc0122-code-solutions
+  326  git branch es6-const-let
+  327  git switch es6-const-let
+  328  git status
+  329  git add es6-const-let
+  330  git status
+  331  git commit -m 'completed es6-const-let'
+  332  git push origin es6-const-let
+  333  git switch master
+  334  git branch es6-template-literals
+  335  git switch es6-template-literals 
+  336  git status
+  337  git add es6-template-literals/
+  338  git status
+  339  git commit -m 'es6-template-literals completed'
+  340  git push origin es6-template-literals 
+  341  git switch master
+  342  git pull origin master
+  343  git branch es6-destructuring
+  344  git switch es6-destructuring 
+  345  git status
+  346  git add es6-destructuring/
+  347  git commit -m 'es6-destructing completed'
+  348  git push origin es6-destructuring 
+  349  git switch master
+  350  git pull origin master
+  351  git branch es6-arrow-functions
+  352  git switch es6-arrow-functions 
+  353  git status
+  354  git add es6-arrow-functions/
+  355  git status
+  356  git commit -m 'es6-arrow-functions completed'
+  357  git push origin es6-arrow-functions 
+  358  git switch master
+  359  git switch es6-template-literals 
+  360  git status
+  361  git add es6-template-literals/
+  362  git status
+  363  git commit -m 'es6-template-literals, w/added notes'
+  364  git push origin es6-template-literals
+  365  git switch master
+  366  git pullorigin master
+  367  git pull origin master
+  368  cd ~/repos
+  369  cd rc0122-code-solutions
+  370  git branch command-line-basics
+  371  git switch command-line-basics 
+  372  pwd
+  373  man man
+  374  man cat
+  375  cat print laziness.txt
+  376  man cat
+  377  cat [print] [laziness.txt]
+  378  man cat
+  379  cat [print]... [laziness.txt]...
+  380  cat laziness.txt
+  381  man cat
+  382  cat PRINT laziness.txt
+  383  cat laziness.txt
+  384  man cat
+  385  cd command-line-basics
+  386  pwd
+  387  man cat
+  388  cat print laziness.txt
+  389  cat print impatience.txt
+  390  cat print hubris.txt
+  391  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  392  cat print three-virtues.txt
+  393  man ls
+  394  ls
+  395  ls -a
+  396  ls -F
+  397  ls lfz-staff/
+  398  ls lfz-staff -a
+  399  ls lfz-staff -F
+  400  ls -aF lfz-staff/contents.txt
+  401  ls -aF > lfz-staff/contents.txt
+  402  cat print lfz-staff/contents.txt
+  403  ls -aF lfz-staff > lfz-staff/contents.txt
+  404  cat print lfz-staff/contents.txt
+  405  cat print contents.txt
+  406  ls
+  407  ls lfz-staff
+  408  cat print print lfz-staff/contents.txt
+  409  cat print contents.txt
+  410  cat print lfz-staff/contents.txt
+  411  ls
+  412  ls lfz-staff
+  413  cat print lfz-staff/contents.txt
+  414  pwd
+  415  man pwd
+  416  pwd
+  417  pwd > i-was-here.txt
+  418  ls
+  419  cat print i-was-here.txt
+  420  ls
+  421  cat print i-was-here.txt
+  422  man echo
+  423  echo print 'Hello, World!'
+  424  echo 'Hello, World!'
+  425  echo 'bloop!'
+  426  ech 'Hello, World!' > hello.txt
+  427  echo 'Hello, World!' > hello.txt
+  428  ls
+  429  cat print hello.txt
+  430  man touch
+  431  touch create tag-youre-it.txt
+  432  touch create snoot/boop.txt
+  433  ls
+  434  ls snoot
+  435  nam mkdir
+  436  man mkdir
+  437  mkdir make parent
+  438  ls
+  439  mkdir testing
+  440  ls
+  441  mkdir -p parent/child/grandchild
+  442  ls
+  443  ls parent
+  444  ls child
+  445  ls parent/child
+  446  touch create parent/child/grandchild/.gitkeep
+  447  ls parent/child
+  448  ls parent/child/grandchild
+  449  ls granchild
+  450  ls grandchild
+  451  ls parent/child
+  452  ls parent/child/grandchild
+  453  touch create parent/child/grandchild/.gitkeep
+  454  ls parent/child/grandchild
+  455  touch parent/child/grandchild/.gitkeep
+  456  ls parent/child/grandchild
+  457  touch create parent/child/grandchild/.gitkeep
+  458  ls -a
+  459  ls -a parent/child/grandchild
+  460  man mv
+  461  mv pokiemans pokemon
+  462  ls
+  463  man rm
+  464  rm delete lol.txt
+  465  rm lol.txt
+  466  ls
+  467  rm make
+  468  rm testing
+  469  rm -r kill-me/
+  470  ls
+  471  man cp
+  472  cp and-then.txt no-and-then.txt
+  473  ls
+  474  cat and-then.txt
+  475  cat no-and-then.txt
+  476  man history
+  477  history
+  478  history > command-history.txt
