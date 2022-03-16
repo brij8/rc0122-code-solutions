@@ -1,9 +1,10 @@
 let count = 3;
 
 const timeout = setInterval(() => {
-  console.log(count);
-  count--;
-  if (count === -1) {
+  if (count > 0) {
+    console.log(count);
+    count--;
+  } else if (count === 0) {
     console.log('Blast off!');
     clearInterval(timeout);
   }
