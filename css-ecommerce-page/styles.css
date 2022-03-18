@@ -1,0 +1,54 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  color: black;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+span {
+  margin: 0;
+  font-size: 1.5rem;
+  flex-basis: 5%;
+}
+
+.greytxt {
+  color: rgb(200 200 200);
+}
+
+.price {
+  background-color: rgb(250 233 208);
+}
+
+.greystrikethru {
+  color: rgb(200 200 200);
+  text-decoration: line-through;
+}
+
+.new-arrivals {
+  text-align: center;
+}
+
+.five-columns {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.col-5 {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.prod-photo {
+  flex-basis: 90%;
+  width: 100%;
+}
