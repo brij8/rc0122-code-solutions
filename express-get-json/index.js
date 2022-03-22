@@ -25,7 +25,7 @@ const grades = {
 app.get('/api/grades', (req, res) => {
   const gradesArray = [];
   for (const prop in grades) {
-    gradesArray.push(prop);
+    gradesArray.push(grades[prop]);
   }
   res.json(gradesArray);
 });
