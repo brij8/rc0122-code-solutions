@@ -40,21 +40,14 @@ app.get('/api/grades', (req, res) => {
 
 app.post('/api/grades', (req, res) => {
   const content = req.body;
-  if (typeof content === 'undefined') {
-    res.status(400).json({
-      error: 'content is a required field'
-    });
+  content.score = parseInt(content.score);
+  if (!content.name || !content.course || !content.score) {
+    res.status(400).json({ error: 'content must include valid course, name, and score' });
     return;
   }
-  content.score = parseInt(content.score);
-  if (typeof content.score !== 'number' ||
-      content.score < 0 ||
-      content.score > 100 ||
-      typeof content.name === 'undefined' ||
-      typeof content.course === 'undefined') {
-    res.status(400).json({
-      error: 'content must include valid course, name, and score'
-    });
+  if (content.score < 0 || content.score > 100) {
+    res.status(400).json({ error: 'Score must be an integer between 0 and 100' });
+    return;
   }
   const params = [
     content.course,
@@ -87,27 +80,20 @@ app.post('/api/grades', (req, res) => {
 app.put('/api/grades/:gradeId', (req, res) => {
   const content = req.body;
   const gradeId = Number(req.params.gradeId);
+  content.score = parseInt(content.score);
   if (!Number.isInteger(gradeId) || gradeId <= 0) {
     res.status(400).json({
       error: '"gradeId" must be a positive integer'
     });
     return;
   }
-  if (typeof content === 'undefined') {
-    res.status(400).json({
-      error: 'content is a required field'
-    });
+  if (!content.name || !content.course || !content.score) {
+    res.status(400).json({ error: 'content must include valid course, name, and score' });
     return;
   }
-  content.score = parseInt(content.score);
-  if (typeof content.score !== 'number' ||
-    content.score < 0 ||
-    content.score > 100 ||
-    typeof content.name === 'undefined' ||
-    typeof content.course === 'undefined') {
-    res.status(400).json({
-      error: 'content must include valid course, name, and score'
-    });
+  if (content.score < 0 || content.score > 100) {
+    res.status(400).json({ error: 'Score must be an integer between 0 and 100' });
+    return;
   }
   const params = [
     content.course,
