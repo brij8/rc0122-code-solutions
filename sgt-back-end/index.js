@@ -41,11 +41,11 @@ app.get('/api/grades', (req, res) => {
 app.post('/api/grades', (req, res) => {
   const content = req.body;
   content.score = parseInt(content.score);
-  if (!content.name || !content.course || !content.score) {
+  if (!content.name || !content.course) {
     res.status(400).json({ error: 'content must include valid course, name, and score' });
     return;
   }
-  if (content.score < 0 || content.score > 100) {
+  if (!content.score || content.score < 0 || content.score > 100) {
     res.status(400).json({ error: 'Score must be an integer between 0 and 100' });
     return;
   }
@@ -87,11 +87,11 @@ app.put('/api/grades/:gradeId', (req, res) => {
     });
     return;
   }
-  if (!content.name || !content.course || !content.score) {
+  if (!content.name || !content.course) {
     res.status(400).json({ error: 'content must include valid course, name, and score' });
     return;
   }
-  if (content.score < 0 || content.score > 100) {
+  if (!content.score || content.score < 0 || content.score > 100) {
     res.status(400).json({ error: 'Score must be an integer between 0 and 100' });
     return;
   }
