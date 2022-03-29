@@ -50,11 +50,19 @@ console.log('balance: ', balance);
 //     trainer: 'ash'
 //   }
 
-function makeObj(prevValue, curValue) {
-  for (const prop in curValue) {
-    prevValue[prop] = curValue[prop];
-  }
-  return prevValue;
-}
-const composite = traits.reduce(makeObj, {});
+// function makeObj(prevValue, curValue) {
+//   for (const prop in curValue) {
+//     prevValue[prop] = curValue[prop];
+//   }
+//   return prevValue;
+// }
+// const composite = traits.reduce(makeObj, {});
+// console.log('composite: ', composite);
+
+// lol it even suggested using assign; this is much better
+
+const composite = traits.reduce((composite, trait) => {
+  return Object.assign(composite, trait);
+}, {});
+
 console.log('composite: ', composite);
