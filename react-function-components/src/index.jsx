@@ -8,7 +8,7 @@ function CustomButton(props) {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<CustomButton />);
 
-// this also works, but don't do it, stick to the <Component /> style
+// this also works, but don't do it, stick to the <JSXComponent /> style
 // root.render(CustomButton());
 
 // React 17 version:
