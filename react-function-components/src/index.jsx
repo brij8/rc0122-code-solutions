@@ -6,10 +6,10 @@ function CustomButton(props) {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(CustomButton());
+root.render(<CustomButton />);
 
-// this also works
-// root.render(<CustomButton />);
+// this also works, but don't do it, stick to the <Component /> style
+// root.render(CustomButton());
 
 // React 17 version:
 // ReactDOM.render(<CustomButton />, document.querySelector('#root'));
