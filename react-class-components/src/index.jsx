@@ -1,0 +1,32 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// function Component
+//
+// function CustomButton(props) {
+//   return (
+//     <button>{props.text}</button>
+//   );
+// }
+
+// class Component
+
+class CustomButton extends React.Component {
+  render() {
+    return <button>{ this.props.text }</button>;
+  }
+}
+
+const element = (
+  <div>
+    <CustomButton text="I" />
+    <CustomButton text="still" />
+    <CustomButton text="know" />
+    <CustomButton text="React!" />
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.querySelector('#root')
+);
