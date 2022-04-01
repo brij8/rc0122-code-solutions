@@ -1,0 +1,47 @@
+/* stylelint-disable selector-class-pattern */
+.toggleBox {
+  display: flex;
+  font-family: monospace;
+}
+
+.switch {
+  height: 48px;
+  width: 48px;
+  border: 3px solid black;
+  border-radius: 50px;
+  background-color: #b1b1b1;
+  margin-top: -2px;
+  position: absolute;
+}
+
+.togBoxtext {
+  padding-left: 2rem;
+  padding-top: 0.4rem;
+  font-size: 2rem;
+}
+
+.tog {
+  height: 50px;
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 50px;
+  background-color: rgb(106 168 79);
+  color: white;
+}
+
+.gle {
+  height: 50px;
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 50px;
+  background-color: grey;
+  color: white;
+}
+
+.tog .switch {
+  left: 59px;
+}
+
+.gle .switch {
+  left: 9px;
+}
