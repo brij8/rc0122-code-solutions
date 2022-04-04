@@ -9,18 +9,26 @@ class ValidatedInput extends React.Component {
 
   handleChange(event) {
     this.setState({ password: event.target.value });
-    const $err = document.querySelector('.errorMsg');
-    const $icon = document.querySelector('.icon');
-    if (event.target.value.length < 8) {
-      $err.innerHTML = 'Password must be 8 characters.';
-      $icon.innerHTML = '❌';
-    } else if (event.target.value.length === 0) {
-      $err.innerHTML = 'A password is required.';
-      $icon.innerHTML = '❌';
-    } else {
-      $err.innerHTML = '';
-      $icon.innerHTML = '✅';
+  }
+
+  // rather than DOM manip, instead make little functions to call at render that'll return the content to be rendered
+  errorDisplay() {
+    const pwChars = 'Password must be 8 characters.';
+    const pwReq = 'A password is required.';
+    if (this.state.password.length === 0) {
+      return pwReq;
+    } else if (this.state.password.length < 8) {
+      return pwChars;
     }
+  }
+
+  iconDisplay() {
+    const NO = '❌';
+    const GO = '✅';
+    if (this.state.password.length < 8) {
+      return NO;
+    }
+    return GO;
   }
 
   render() {
@@ -31,9 +39,9 @@ class ValidatedInput extends React.Component {
             Password:
             <input type="password" className='pwInput' onChange={this.handleChange} />
           </label>
-          <div className='icon'>❌</div>
+          <div className='icon'>{this.iconDisplay()}</div>
         </form>
-        <p className='errorMsg'>A password is required.</p>
+        <p className='errorMsg'>{this.errorDisplay()}</p>
       </div>
     );
   }
