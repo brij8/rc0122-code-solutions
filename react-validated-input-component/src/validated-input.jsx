@@ -38,15 +38,6 @@ class ValidatedInput extends React.Component {
     );
   }
 
-  // <div className='pwOuterBox'>
-  //   <label>Password</label>
-  //   <div className='pwBox'>
-  //     <input type='password' id='password' className='pwInput' />
-  //     <div className='icon'>X</div>
-  //   </div>
-  //   <p className='errorMsg'></p>
-  // </div>
-
 }
 
 export default ValidatedInput;
