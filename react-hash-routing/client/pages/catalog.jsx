@@ -56,6 +56,7 @@ function Product(props) {
   const prodLink = `#products?productId=${productId}`;
   return (
     <a
+      // href={`#products?productId=${productId}`} <-- just wrap in {} lol
       href={prodLink}
       style={styles.product}
       className="text-dark card mb-4 shadow-sm text-decoration-none">
