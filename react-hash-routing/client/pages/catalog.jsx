@@ -53,11 +53,10 @@ function Product(props) {
   // eslint-disable-next-line no-unused-vars
   const { productId, name, price, imageUrl, shortDescription } = props.product;
   /* this anchor should go to product details at `#products?productId=${productId}` */
-  const prodLink = `#products?productId=${productId}`;
+  // const prodLink = `#products?productId=${productId}`; <-- not needed
   return (
     <a
-      // href={`#products?productId=${productId}`} <-- just wrap in {} lol
-      href={prodLink}
+    href={`#products?productId=${productId}`} // <-- just wrap in {} lol
       style={styles.product}
       className="text-dark card mb-4 shadow-sm text-decoration-none">
       <img src={imageUrl} className="card-img-top" alt={name} style={styles.image}/>
