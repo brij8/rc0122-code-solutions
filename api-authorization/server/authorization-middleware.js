@@ -3,7 +3,7 @@ const ClientError = require('./client-error'); // eslint-disable-line
 
 function authorizationMiddleware(req, res, next) {
   /* your code here */
-  // console.log('req.headers: ', req.headers);
+  // deleted console.log & added this note bc i'm a goof and accidently merged :D
   const xAccess = req.headers['x-access-token'];
   if (xAccess === null) {
     throw new ClientError(401, 'authentication required');
