@@ -27,13 +27,17 @@ app.post('/api/uploads', uploadsMiddleware, (req, res, next) => {
   //* - create a url for the image by combining '/images' with req.file.filename
   const url = '/images/' + req.file.filename;
   //* - insert the "caption" and "url" into the "images" table
+  const obj = {
+    caption,
+    url
+  };
   const sql = `
     insert into "images"("caption", "url")
-    values('${caption}', '${url}')
+    values($1, $2)
     returning *
   `;
   // * - respond with the inserted row data
-  db.query(sql)
+  db.query(sql, obj)
     .then(result => {
       res.json(result.rows);
     })
