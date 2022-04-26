@@ -13,3 +13,13 @@ function takeNextSmallest(queue) {
     queue.enqueue(bucket);
   }
 }
+
+// // instructor solution:
+// function takeNextSmallest(queue) {
+//   let nextSmol = queue.dequeue();
+//   while (nextSmol > queue.peek()) {
+//     queue.enqueue(nextSmol);
+//     nextSmol = queue.dequeue();
+//   }
+//   return nextSmol;
+// }
